@@ -1,61 +1,74 @@
-body .gist .highlight {
+.gist .gist-meta {
+  color: #6e7781;
+  background: #181a1c;
+}
+
+.gist .gist-meta a {
+  color: #807c87;
+}
+
+.gist .highlight {
   color: #c9d1d9;
   background: #24292e;
 }
 
-body .gist .blob-num {
-  color: #e0e2e4;
+.gist .blob-code-inner {
+  color: #c9d1d9;
+}
+
+.gist .blob-num {
+  color: #8b949e;
 }
 
 .gist .pl-c {
-  color: #6a737d;
+  color: #959da5;
 }
 
 .gist .pl-c1,
-.gist .pl-s .pl-v {
-  color: #005cc5;
+.gist .pl-s .gist .pl-v {
+  color: #c8e1ff;
 }
 
 .gist .pl-e,
 .gist .pl-en {
-  color: #6f42c1;
+  color: #b392f0;
 }
 
 .gist .pl-smi,
-.gist .pl-s .pl-s1 {
-  color: #24292e;
+.gist .pl-s .gist .pl-s1 {
+  color: #f6f8fa;
 }
 
 .gist .pl-ent {
-  color: #22863a;
+  color: #7bcc72;
 }
 
 .gist .pl-k {
-  color: #d73a49;
+  color: #ea4a5a;
 }
 
 .gist .pl-s,
 .gist .pl-pds,
-.gist .pl-s .pl-pse .pl-s1,
+.gist .pl-s .gist .pl-pse .gist .pl-s1,
 .gist .pl-sr,
-.gist .pl-sr .pl-cce,
-.gist .pl-sr .pl-sre,
-.gist .pl-sr .pl-sra {
-  color: #032f62;
+.gist .pl-sr .gist .pl-cce,
+.gist .pl-sr .gist .pl-sre,
+.gist .pl-sr .gist .pl-sra {
+  color: #79b8ff;
 }
 
 .gist .pl-v,
-.gist .pl-smw {
-  color: #e36209;
+.gist .pl-ml {
+  color: #fb8532;
 }
 
 .gist .pl-bu {
-  color: #b31d28;
+  color: #d73a49;
 }
 
 .gist .pl-ii {
   color: #fafbfc;
-  background-color: #b31d28;
+  background-color: #d73a49;
 }
 
 .gist .pl-c2 {
@@ -63,26 +76,22 @@ body .gist .blob-num {
   background-color: #d73a49;
 }
 
-.gist .pl-sr .pl-cce {
-  color: #22863a;
-}
-
-.gist .pl-ml {
-  color: #735c0f;
+.gist .pl-sr .gist .pl-cce {
+  color: #7bcc72;
 }
 
 .gist .pl-mh,
-.gist .pl-mh .pl-en,
+.gist .pl-mh .gist .pl-en,
 .gist .pl-ms {
-  color: #005cc5;
+  color: #0366d6;
 }
 
 .gist .pl-mi {
-  color: #24292e;
+  color: #f6f8fa;
 }
 
 .gist .pl-mb {
-  color: #24292e;
+  color: #f6f8fa;
 }
 
 .gist .pl-md {
@@ -91,32 +100,36 @@ body .gist .blob-num {
 }
 
 .gist .pl-mi1 {
-  color: #22863a;
+  color: #176f2c;
   background-color: #f0fff4;
 }
 
 .gist .pl-mc {
-  color: #e36209;
-  background-color: #ffebda;
+  color: #b08800;
+  background-color: #fffdef;
 }
 
 .gist .pl-mi2 {
-  color: #f6f8fa;
-  background-color: #005cc5;
+  color: #2f363d;
+  background-color: #959da5;
 }
 
 .gist .pl-mdr {
-  color: #6f42c1;
+  color: #b392f0;
+}
+
+.gist .pl-mo {
+  color: #0366d6;
 }
 
 .gist .pl-ba {
-  color: #586069;
+  color: #ffeef0;
 }
 
 .gist .pl-sg {
-  color: #959da5;
+  color: #6a737d;
 }
 
 .gist .pl-corl {
-  color: #032f62;
+  color: #79b8ff;
 }
