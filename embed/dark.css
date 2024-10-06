@@ -1,3 +1,19 @@
+[data-color-mode="light"][data-light-theme="light"] {
+  --fgColor-default: #c9d1d9;
+  --bgColor-default: #181a1c;
+  --bgColor-muted: #272a2d;
+  --borderColor-muted: #575e65;
+}
+
+.gist {
+  color: #c9d1d9;
+}
+
+.gist .gist-data,
+.gist .gist-file {
+  border-color: #484e54;
+}
+
 .gist .gist-meta {
   color: #6e7781;
   background: #181a1c;
@@ -5,11 +21,6 @@
 
 .gist .gist-meta a {
   color: #807c87;
-}
-
-.gist .highlight {
-  color: #c9d1d9;
-  background: #24292e;
 }
 
 .gist .blob-code-inner {
