@@ -6,12 +6,22 @@
   <title>GitHub Gist</title>
   <script src="./index.js"></script>
   <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    }
     body.dark {
       color: #e8e8e8;
       background-color: #212121;
     }
     .head {
       text-align: center;
+    }
+    .head a {
+      font-weight: bold;
+      color: #2271f0;
+    }
+    .head a:hover {
+      color: #1c5dc6;
     }
     .demo {
       max-width: 640px;
@@ -22,7 +32,9 @@
 <body>
   <div class="head">
     <h1>GitHub Gist Element</h1>
-    <div style="font-size:1.5rem;margin:1rem;"><code>&lt;github-gist /&gt;</code></div>
+    <div style="margin:1.5rem">
+      <a href="https://github.com/lepture/github-gist">GitHub</a>
+    </div>
     <button id="switch-theme">Switch theme</button>
   </div>
   <div class="demo">
