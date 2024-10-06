@@ -6,12 +6,12 @@
   <title>GitHub Gist</title>
   <script src="./index.js"></script>
   <style>
-    :root {
-      --border-color: #ddd;
-    }
     body.dark {
+      color: #e8e8e8;
       background-color: #212121;
-      --border-color: #666;
+    }
+    .head {
+      text-align: center;
     }
     .demo {
       max-width: 640px;
@@ -21,6 +21,8 @@
 </head>
 <body>
   <div class="head">
+    <h1>GitHub Gist Element</h1>
+    <div style="font-size:1.5rem;margin:1rem;"><code>&lt;github-gist /&gt;</code></div>
     <button id="switch-theme">Switch theme</button>
   </div>
   <div class="demo">
