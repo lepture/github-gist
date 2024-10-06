@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Gist</title>
+  <script src="./index.js"></script>
+  <style>
+    :root {
+      --border-color: #ddd;
+    }
+    body.dark {
+      background-color: #212121;
+      --border-color: #666;
+    }
+    .demo {
+      max-width: 640px;
+      margin: 5rem auto;
+    }
+    github-gist {
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <button id="switch-theme">Switch theme</button>
+  </div>
+  <div class="demo">
+    <github-gist path="lepture/8237251d19d53a8e6627514d1b0104de"></github-gist>
+  </div>
+
+  <script type="module">
+    let isDark = false
+    const button = document.getElementById('switch-theme')
+    button.addEventListener('click', () => {
+      isDark = !isDark
+      const theme = isDark ? 'dark' : 'light'
+      document.body.className = theme
+      const gists = document.querySelectorAll('github-gist')
+      gists.forEach(el => {
+        el.setAttribute('theme', theme)
+      })
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+  "name": "github-gist",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Web component for GitHub Gist",
+  "author": "Hsiaoming Yang <me@lepture.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/lepture/github-gist#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lepture/github-gist.git"
+  },
+  "bugs": "https://github.com/lepture/github-gist/issues",
+  "keywords": [
+    "github"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --loader:.css=text --minify > index.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}
